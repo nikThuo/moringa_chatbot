@@ -1,0 +1,94 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hey
+    - Hi
+    - hello
+    - hey there 
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: courses_offered_moringa
+  examples: |
+    - Courses offered by [Moringa School](institution) 
+    - Which courses are offered in [Moringa School](institution)?
+    - What can i learn in [moringa](institution)
+    - What course does [moringa](institution) offer
+    - Which course can I enroll with you?
+    - how many courses do you offer at the moment?
+    - What can I do in [Moringa](institution)
+    - What does [Moringa](institution) teach?
+    - what courses do you have?
+    - Does [moringa](institution) offer A.I?
+
+- intent: fee_payment
+  examples: |
+    - Fee for [Software Development](course) 
+    - How much would it cost to take a course in [software development](course)?
+    - how much is [Software](course) 
+    - how much for [software development](course)
+    - how much does it cost for the entire course
+    - what is the total fee for the [SD](course) course
+    - how much will it cost me for this course
+    - How much for [SD](course)
+    - How much does a [Software](course) course cost?
+    - How much does the [SD](course) cost?
+    - How much do you pay for [software dev](course)?
+    - How much do you pay for [SD](course)?
+    - what's the total fee for [software development](course)
+    - what's the total fee for [SD](course)?
+    - Can I pay for the whole class? prep and core?
+
+- intent: course_structure
+  examples: |
+    - How long does the [Moringa School](institution) [Software Development](course) Course Take?
+    - How long is [moringa](institution)?
+    - How long does a course go for?
+    - What is the overall time it takes to complete the course?
+    - How long does it take to complete this course?
+    - How long does it take to be through with this course?
+    - How long do the courses take to complete?
+ 
+
+    
+# - intent: faq/language
+#   examples: |
+#     - What language do you speak?
+#     - Do you only handle english?
+
+# stories:
+# - story: greet and faq
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq
+
+# rules:
+# - rule: Greet user
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
